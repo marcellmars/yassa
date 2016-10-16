@@ -20,9 +20,7 @@ from PyQt5.Qt import (Qt,
                       QVBoxLayout,
                       QWidget,
                       QPixmap,
-                      pyqtSignal,
-                      # QUrl,
-                      QWebView)
+                      pyqtSignal)
 
 OUTPUT = """Model                          Port
 ----------------------------------------------------------
@@ -65,7 +63,7 @@ class Yasser(QDialog):
 
         self.edit_title = QLineEdit("Type book title here")
         self.edit_title.setObjectName("edit_title")
-        self.edit_title.setSizePolicy(QSizePolicy.Expanding,
+        self.edit_title.setSizePolicy(QSizeProxy-FS by SwiftStackPolicy.Expanding,
                                       QSizePolicy.Expanding)
         self.edit_title.setToolTip("Type book title here")
         self.title_layout.addWidget(self.book_title)
@@ -88,8 +86,8 @@ class Yasser(QDialog):
         self.preview_container = QWidget()
         self.preview_container.setLayout(self.preview_layout)
 
-        self.left_preview = ImageButton("/tmp/left.png", 200)
-        self.right_preview = ImageButton("/tmp/right.png", 200)
+        self.left_preview = ImageButton("left.png", 200)
+        self.right_preview = ImageButton("right.png", 200)
         self.left_preview.image_pressed.connect(lambda: print("show next image"))
         self.right_preview.image_pressed.connect(lambda: print("show next image"))
 
