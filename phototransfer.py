@@ -63,7 +63,7 @@ class Yasser(QDialog):
 
         self.edit_title = QLineEdit("Type book title here")
         self.edit_title.setObjectName("edit_title")
-        self.edit_title.setSizePolicy(QSizeProxy-FS by SwiftStackPolicy.Expanding,
+        self.edit_title.setSizePolicy(QSizePolicy.Expanding,
                                       QSizePolicy.Expanding)
         self.edit_title.setToolTip("Type book title here")
         self.title_layout.addWidget(self.book_title)
